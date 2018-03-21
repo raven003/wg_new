@@ -18,6 +18,7 @@ import { RouterModule, PreloadAllModules } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 import { BasketComponent } from './basket/basket.component';
 import { SharedModule } from './shared/shared.module';
+import { PicturesComponent } from './pictures/pictures.component';
 
 
 
@@ -39,10 +40,12 @@ import { SharedModule } from './shared/shared.module';
     SidebarComponent,
     NavbarComponent,
     HomeComponent,
-    BasketComponent
-  ],
+    BasketComponent,
+    PicturesComponent
+],
   providers: [
-    EventService // Global
+    PicturesComponent
+     // Global
     // { provide: FlightService, useClass: FlightService}
     // FlightService
   ],
