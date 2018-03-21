@@ -18,7 +18,9 @@ import { RouterModule, PreloadAllModules } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 import { BasketComponent } from './basket/basket.component';
 import { SharedModule } from './shared/shared.module';
-import { EventService } from './event.service';
+
+
+
 
 @NgModule({
   imports: [
