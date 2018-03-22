@@ -9,7 +9,6 @@ import { AuthService } from '../shared/auth.service';
 })
 export class HomeComponent implements OnInit {
 
-  active = 1;
 
   constructor(private authService: AuthService) { }
 

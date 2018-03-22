@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BasketComponent } from './basket/basket.component';
 import { PicturesComponent} from './pictures/pictures.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 export const APP_ROUTES: Routes = [
   {
@@ -16,6 +17,10 @@ export const APP_ROUTES: Routes = [
   {
     path:'pictures',
     component: PicturesComponent
+  },
+  {
+    path:'tasks',
+    component: TasksComponent
   },
   {
     path: 'flight-booking',

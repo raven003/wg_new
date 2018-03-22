@@ -19,6 +19,7 @@ import { APP_ROUTES } from './app.routes';
 import { BasketComponent } from './basket/basket.component';
 import { SharedModule } from './shared/shared.module';
 import { PicturesComponent } from './pictures/pictures.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 
 
@@ -41,7 +42,8 @@ import { PicturesComponent } from './pictures/pictures.component';
     NavbarComponent,
     HomeComponent,
     BasketComponent,
-    PicturesComponent
+    PicturesComponent,
+    TasksComponent
 ],
   providers: [
     PicturesComponent
