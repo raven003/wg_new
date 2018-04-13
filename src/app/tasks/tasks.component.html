@@ -1,32 +1,14 @@
-<!-- <p>
-  tasks works!
-</p>
-<p>&nbsp;</p>
-<tabbed-pane [(activatedId)]="active" #tp>
 
-    <tab title="Tim" [id]="0">
-        <div>{{test}}</div>
-    </tab>
+<button class="btn btn-default" (click)="showquote()">Generate Random CleanUp Action</button>
 
-    <tab title="Fabi" [id]="1">
-        Here you can find all passengers checked in to their flights.
-    </tab>
-    <tab title="Jules" [id]="2">
-        HEre you can find all boarded passengers.
-    </tab>    
-</tabbed-pane>
-<p>&nbsp;</p>
-<div>
-    ** {{active}} **
-    ** {{ tp.currentTitle }}**
-</div> -->
-<div>
+<div>Tim
+    <p id="tasks"> {{timtask}} </p>
+</div>
 
-    <button class="btn btn-default" (click)="showquote()">Generate Random CleanUp Action</button>
-    <!-- <button class="btn btn-default" (click)="tp.expand()">Expand</button>
-    <button class="btn btn-default" (click)="tp.collapse()">Collapse</button> -->
+<div>Fabi
+    <p id="tasks"> {{timtask}} </p>
+</div>
 
-    <div id="taskfabe"></div>
-    <div id="tasktim"> </div>
-    <div id="taskjules"> </div>
+<div>Jules
+    <p id="tasks"> {{timtask}} </p>
 </div>

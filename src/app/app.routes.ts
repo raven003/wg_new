@@ -3,6 +3,8 @@ import { HomeComponent } from './home/home.component';
 import { BasketComponent } from './basket/basket.component';
 import { PicturesComponent} from './pictures/pictures.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserComponent } from './user/user.component';
 
 export const APP_ROUTES: Routes = [
   {
@@ -15,16 +17,20 @@ export const APP_ROUTES: Routes = [
     component: HomeComponent
   },
   {
+    path: 'dash',
+    component: DashboardComponent
+  },
+  {
+    path: 'user',
+    component: UserComponent
+  },
+  {
     path:'pictures',
     component: PicturesComponent
   },
   {
     path:'tasks',
     component: TasksComponent
-  },
-  {
-    path: 'flight-booking',
-    loadChildren: './flight-booking/flight-booking.module#FlightBookingModule'
   },
   {
     path: 'basket',

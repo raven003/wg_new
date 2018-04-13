@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { forEach } from '@angular/router/src/utils/collection';
 
 @Component({
   selector: 'app-tasks',
@@ -9,29 +10,23 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 export class TasksComponent implements OnInit {
 
 
+   timtask: string;
+   fabitask: string;
   ngOnInit() {
   }
-  active = 1;
-  test = "hallo";
-
-  constructor() { }
+  constructor() {
+  }
 
 
-  showquote() {
-    var fabitasks = ['Fabi wischt', 'Fabi saugt die Butze', 'Fabi cleaned die Bäder'];
+  public showquote() {
 
-    var timtasks = ['tim wischt', 'tim saugt die Butze', 'tim cleaned die Bäder'];
-    var julestasks = ['jules wischt', 'jules saugt die Butze', 'jules cleaned die Bäder'];
-    
-    var rand = Math.floor(Math.random() * fabitasks.length);
-
-    var rand2= Math.floor(Math.random() * timtasks.length);
-
-    var rand3 = Math.floor(Math.random() * julestasks.length);
-    document.getElementById('taskfabe').innerHTML = fabitasks[rand];
-    document.getElementById('tasktim').innerHTML = timtasks[rand2];
-    document.getElementById('taskjules').innerHTML = julestasks[rand3];
+    var tasks = [' wischt die Hütte', ' saugt die Butze', ' cleaned die Bäder'];
+    var rand = Math.floor(Math.random() * tasks.length);
+    document.getElementById('tasks').innerHTML = tasks[rand];
+    this.timtask =  document.getElementById('tasks').innerHTML;
     
   }
 
 }
+
+
