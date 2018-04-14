@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { FlightEditComponent } from '../flight-booking/flight-edit/flight-edit.component';
 import { Observable } from 'rxjs/Observable';
 
 export interface ExitComponent {
