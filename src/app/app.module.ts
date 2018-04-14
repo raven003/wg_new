@@ -22,6 +22,7 @@ import { SharedModule } from './shared/shared.module';
 import { PicturesComponent } from './pictures/pictures.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { UserComponent } from './user/user.component';
+import { DonateComponent } from './donate/donate.component';
 
 
 
@@ -47,7 +48,8 @@ import { UserComponent } from './user/user.component';
     PicturesComponent,
     TasksComponent,
     DashboardComponent,
-    UserComponent
+    UserComponent,
+    DonateComponent
 ],
   providers: [
     PicturesComponent,

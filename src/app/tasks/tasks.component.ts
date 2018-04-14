@@ -35,6 +35,7 @@ export class TasksComponent implements OnInit {
       index = tasks.indexOf(this.fabitask);
       if (index !== -1) tasks.splice(index, 1);
       this.julestask = tasks[i];
+
     }
     console.log(tasks);
   }

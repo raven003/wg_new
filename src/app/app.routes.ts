@@ -5,6 +5,7 @@ import { PicturesComponent} from './pictures/pictures.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserComponent } from './user/user.component';
+import { DonateComponent } from './donate/donate.component';
 
 export const APP_ROUTES: Routes = [
   {
@@ -19,6 +20,10 @@ export const APP_ROUTES: Routes = [
   {
     path: 'dash',
     component: DashboardComponent
+  },
+  {
+    path:'donate',
+    component: DonateComponent
   },
   {
     path: 'user',
