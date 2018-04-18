@@ -8,7 +8,7 @@ import { authConfig } from './auth.config';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent  {
-  title = 'Manfred war hier!';
+  title = 'Julezzzzz war hier!';
 
   constructor(private oauthService: OAuthService) {
     oauthService.configure(authConfig);

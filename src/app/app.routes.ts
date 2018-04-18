@@ -1,6 +1,11 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BasketComponent } from './basket/basket.component';
+import { PicturesComponent} from './pictures/pictures.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserComponent } from './user/user.component';
+import { DonateComponent } from './donate/donate.component';
 
 export const APP_ROUTES: Routes = [
   {
@@ -13,8 +18,24 @@ export const APP_ROUTES: Routes = [
     component: HomeComponent
   },
   {
-    path: 'flight-booking',
-    loadChildren: './flight-booking/flight-booking.module#FlightBookingModule'
+    path: 'dash',
+    component: DashboardComponent
+  },
+  {
+    path:'donate',
+    component: DonateComponent
+  },
+  {
+    path: 'user',
+    component: UserComponent
+  },
+  {
+    path:'pictures',
+    component: PicturesComponent
+  },
+  {
+    path:'tasks',
+    component: TasksComponent
   },
   {
     path: 'basket',

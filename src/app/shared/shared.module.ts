@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CityPipe } from './pipes/city.pipe';
 import { AuthGuard } from './auth.guard';
 import { AuthService } from './auth.service';
 import { ExitGuard } from './exit.guard';
@@ -15,13 +14,13 @@ import { TabbedPaneComponent } from './tabbed-pane/tabbed-pane.component';
     CommonModule
   ],
   declarations: [
-    CityPipe,
+    
     TabComponent,
     TabbedPaneComponent
 ],
   providers: [/* Wird ganz bewusst leer gelassen bei SharedModules!! */],
   exports: [
-    CityPipe,
+    
     TabComponent,
     TabbedPaneComponent
   ]
