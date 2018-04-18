@@ -1,3 +1,5 @@
+import { ItemService } from './item.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
@@ -9,16 +11,21 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { FlightSearchComponent } from './flight-booking/flight-search/flight-search.component';
-import { FlightService } from './flight-booking/flight-search/flight.service';
-import { CityPipe } from './shared/pipes/city.pipe';
+
+
 // import { FlightBookingModule } from './flight-booking/flight-booking.module';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 import { BasketComponent } from './basket/basket.component';
 import { SharedModule } from './shared/shared.module';
-import { EventService } from './event.service';
+import { PicturesComponent } from './pictures/pictures.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { UserComponent } from './user/user.component';
+import { DonateComponent } from './donate/donate.component';
+
+
+
 
 @NgModule({
   imports: [
@@ -37,10 +44,17 @@ import { EventService } from './event.service';
     SidebarComponent,
     NavbarComponent,
     HomeComponent,
-    BasketComponent
-  ],
+    BasketComponent,
+    PicturesComponent,
+    TasksComponent,
+    DashboardComponent,
+    UserComponent,
+    DonateComponent
+],
   providers: [
-    EventService // Global
+    PicturesComponent,
+    ItemService
+     // Global
     // { provide: FlightService, useClass: FlightService}
     // FlightService
   ],
