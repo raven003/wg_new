@@ -36,6 +36,5 @@ export class PicturesComponent implements OnInit {
         .map(res => res.blob())
         .catch(this.handleError)
 }
-  
-    
+ 
 }

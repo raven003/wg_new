@@ -1,6 +1,7 @@
+import { CalendarComponent } from './calendar/calendar/calendar.component';
+import { CameraComponent } from './camera/camera.component';
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { BasketComponent } from './basket/basket.component';
 import { PicturesComponent} from './pictures/pictures.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -18,6 +19,10 @@ export const APP_ROUTES: Routes = [
     component: HomeComponent
   },
   {
+    path:'calendar',
+    component: CalendarComponent
+  },
+  {
     path: 'dash',
     component: DashboardComponent
   },
@@ -30,17 +35,16 @@ export const APP_ROUTES: Routes = [
     component: UserComponent
   },
   {
+    path:'camera',
+    component: CameraComponent
+  },
+  {
     path:'pictures',
     component: PicturesComponent
   },
   {
     path:'tasks',
     component: TasksComponent
-  },
-  {
-    path: 'basket',
-    component: BasketComponent,
-    outlet: 'aux'
   },
   {
     path: '**',

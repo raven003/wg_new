@@ -1,14 +1,65 @@
+<button class="btn btn-default" (click)="showquote()">
+    Generate Random CleanUp Action
+    <i class="ti-reload"></i>
+</button>
+<div class="row">
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <div class="relative">
+                                <i class="ti-rocket"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="numbers"> Tim
+                            <p id="tasks"> {{timtask}}</p>
 
-<button class="btn btn-default" (click)="showquote()">Generate Random CleanUp Action</button>
+                        </div>
+                    </div>
+                </div>
 
-<div>Tim
-    <p id="tasks"> {{timtask}} </p>
-</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <i class="ti-brush"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="numbers"> Fabi
+                            <p id="tasks"> {{fabitask}}</p>
+                        </div>
+                    </div>
+                </div>
 
-<div>Fabi
-    <p id="tasks"> {{fabitask}} </p>
-</div>
-
-<div>Jules
-    <p id="tasks"> {{julestask}} </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <i class="ti-wand"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="numbers"> Jules
+                            <p id="tasks"> {{julestask}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

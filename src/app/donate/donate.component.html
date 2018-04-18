@@ -4,8 +4,7 @@
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
   <!-- Identify your business so that you can collect the payments. -->
-  <input type="hidden" name="business"
-      value="tim.hollederer@googlemail.com">
+  <input type="hidden" name="business" value="julianfalk61@gmail.com">
 
   <!-- Specify a Donate button. -->
   <input type="hidden" name="cmd" value="_donations">
@@ -14,11 +13,12 @@
   <input type="hidden" name="item_name" value="Friends of the Park">
   <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
   <input type="hidden" name="currency_code" value="EUR">
+  <INPUT TYPE="hidden" name="address_override" value="1">
 
   <!-- Display the payment button. -->
-  <input type="image" name="submit"
-  src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-  alt="Donate">
+  <div class="buttonHolder">
+    <input type="image" name="submit" class="rounded" src="http://www.exconcept.de/uploads/pics/paypal.jpg" alt="Donate">
+  </div>
   <img alt="" width="1" height="1"
   src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
 
