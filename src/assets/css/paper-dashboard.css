@@ -106,7 +106,7 @@ blockquote small {
 }
 
 .text-muted {
-  color: #DDDDDD;
+  color: rgb(223, 41, 41);
 }
 
 .text-primary, .text-primary:hover {
@@ -552,7 +552,7 @@ hr {
 }
 
 .main-panel {
-  background-color: #f4f3ef;
+  background-color: rgb(255, 255, 255);
   position: relative;
   z-index: 2;
   float: right;
@@ -3879,7 +3879,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fixed-plugin .dropdown-menu {
-  background: #FFFFFF;
+  background: rgb(255, 255, 255);
 }
 
 @media (min-width: 992px) {

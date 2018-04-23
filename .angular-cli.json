@@ -19,10 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
-      ],  
-      "scripts": [
-        "../node_modules/chartist/dist/chartist.js"
+        "../node_modules/devextreme/dist/css/dx.common.css", 
+        "../node_modules/devextreme/dist/css/dx.light.css", 
+        "../node_modules/chartist/dist/chartist.js",
+        "styles.css" 
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

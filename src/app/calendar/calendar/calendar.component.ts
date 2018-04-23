@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { NgModule, Component, enableProdMode } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+
+
+import {DxSchedulerModule} from 'devextreme-angular';
+import { Service, Appointment } from './calendar.service';
+
+if (!/localhost/.test(document.location.host)) {
+    enableProdMode();
+}
 
 @Component({
-  selector: 'app-calendar',
-  templateUrl: './calendar.component.html',
-  styleUrls: ['./calendar.component.css']
+    selector: 'demo-app',
+    templateUrl: './calendar.component.html',
+    providers: [Service]
 })
-export class CalendarComponent implements OnInit {
+export class CalendarComponent {
+    appointmentsData: Appointment[];
+    currentDate: Date = new Date(2017, 4, 25);
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+    constructor(service: Service) {
+        this.appointmentsData = service.getAppointments();
+    }
 }
+

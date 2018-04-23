@@ -27,20 +27,23 @@ import { DonateComponent } from './donate/donate.component';
 
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+import { DxSchedulerModule } from 'devextreme-angular/ui/scheduler';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+
 
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
-
+    DxSchedulerModule,
     OAuthModule.forRoot(),
     // FlightBookingModule, // Würde Lazy Loading verhindern!
     RouterModule.forRoot(
       APP_ROUTES,
       { preloadingStrategy: PreloadAllModules }
     ),
-    SharedModule.forRoot()
+    SharedModule.forRoot(),
   ],
   declarations: [
     AppComponent,
@@ -61,8 +64,9 @@ import { AppComponent } from './app.component';
   // Global
   // { provide: FlightService, useClass: FlightService}
   // FlightService
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, CalendarComponent]
 })
 
+export class AppModule { }
 
-export class AppModule  { }
+platformBrowserDynamic().bootstrapModule(AppModule)
