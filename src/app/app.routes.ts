@@ -1,4 +1,4 @@
-import { CalendarComponent } from './calendar/calendar/calendar.component';
+// import { CalendarComponent } from './calendar/calendar/calendar.component';
 import { CameraComponent } from './camera/camera.component';
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -18,10 +18,10 @@ export const APP_ROUTES: Routes = [
     path: 'home',
     component: HomeComponent
   },
-  {
-    path:'calendar',
-    component: CalendarComponent
-  },
+  // {
+  //   path:'calendar',
+  //   component: CalendarComponent
+  // },
   {
     path: 'dash',
     component: DashboardComponent

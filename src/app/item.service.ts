@@ -2,16 +2,17 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 export interface Item {
-  Messung: number;
-  Version: string;
-  Bestand: string;
-  Id: number;
-  _id?: string; //Id aus der MongoDB
+  _id?: string,
+  AssignedTo: string,
+  Title: string,
+  Reward: number,
+  Due: Date,
+  Icon: string
 }
 
 @Injectable()
 export class ItemService {
-  static BASE_URL: string = 'http://localhost:3000/items';
+  static BASE_URL: string = 'http://localhost:3000/tasks';
 
   constructor(private http: HttpClient) {}
 

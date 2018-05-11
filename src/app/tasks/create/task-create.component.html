@@ -1,0 +1,63 @@
+<ng-container *ngIf="!task && new && !edit">
+
+    <div class="wrapper">
+
+        <button class="create" (click)="startCreateNew()">
+            <i class="fas fa-plus"></i>
+        </button>
+
+    </div>
+</ng-container>
+
+
+<!--<pre>New:{{new}}, Edit:{{edit}}{{task | json}}</pre>-->
+<div class="col-lg-3 col-sm-6" *ngIf="task">
+    <div class="card">
+        <div class="content">
+            <div class="row">
+                <div class="col-xs-5">
+                    <div class="icon-big icon-warning text-center">
+
+                        <div class="relative">
+
+
+                            <i class="fas fa-edit" *ngIf="!new" (click)="edit = !edit"></i>
+
+
+                            <i class="far fa-trash-alt" (click)="deleteTask()"></i>
+
+
+
+
+
+
+
+                            <!-- {{!edit ? 'edit' : 'cancel'}} </i> -->
+                            <!-- <button *ngIf="!new" (click)="edit = !edit">{{!edit ? 'edit' : 'cancel'}}</button> -->
+                            <!-- <i *ngIf="!edit" class="{{task.Icon}}"></i> -->
+                            <!-- <input *ngIf="edit" [(ngModel)]="task.Icon" type="text"> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="numbers">
+                        <div class="title">
+                            
+                        <p id="tasks" *ngIf="!edit"> {{task.Title}}</p>
+
+                    </div>
+                        <input *ngIf="edit" [(ngModel)]="task.Title" type="text">
+
+                        <time *ngIf="!edit">{{task.Due | date:'YYYY.MM.DD'}}</time>
+                        <input *ngIf="edit" [(ngModel)]="task.Due" type="date">
+                    </div>
+                </div>
+            </div>
+            <div class="submitbutton">
+                <i class="fas fa-check" *ngIf="edit" (click)="saveTask()"></i>
+
+            </div>
+        </div>
+
+    </div>
+</div>

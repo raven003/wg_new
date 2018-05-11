@@ -241,7 +241,7 @@ strong {
   }
 }
 body {
-  color: #66615b;
+  color: #ebfbee;
   font-size: 14px;
   font-family: 'Muli', Arial, sans-serif;
 }
@@ -342,7 +342,7 @@ hr {
   overflow: hidden;
   width: 260px;
   z-index: 4;
-  box-shadow: inset -1px 0px 0px 0px #DDDDDD;
+  box-shadow: inset -1px 0px 0px 0px rgb(221, 221, 221);
 }
 .sidebar .sidebar-background {
   position: absolute;
@@ -503,7 +503,7 @@ hr {
 .sidebar[data-background-color="black"]:after, .sidebar[data-background-color="black"]:before,
 .off-canvas-sidebar[data-background-color="black"]:after,
 .off-canvas-sidebar[data-background-color="black"]:before {
-  background-color: #212120;
+  background-color: #495057;
 }
 .sidebar[data-background-color="black"] .logo,
 .off-canvas-sidebar[data-background-color="black"] .logo {
@@ -552,7 +552,7 @@ hr {
 }
 
 .main-panel {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   position: relative;
   z-index: 2;
   float: right;
@@ -568,6 +568,7 @@ hr {
 }
 .main-panel .navbar {
   margin-bottom: 0;
+  background-color: #dee2e6;
 }
 
 .sidebar,
@@ -3766,7 +3767,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fixed-plugin .badge-black {
-  background-color: #212120;
+  background-color: #b4b417;
 }
 
 .fixed-plugin .badge-primary {

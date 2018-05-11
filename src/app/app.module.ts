@@ -1,4 +1,4 @@
-import { CalendarComponent } from './calendar/calendar/calendar.component';
+// import { CalendarComponent } from './calendar/calendar/calendar.component';
 import { CameraComponent } from './camera/camera.component';
 import { ItemService } from './item.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -22,6 +22,7 @@ import { APP_ROUTES } from './app.routes';
 import { SharedModule } from './shared/shared.module';
 import { PicturesComponent } from './pictures/pictures.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { TaskCreateComponent } from './tasks/create/task-create.component';
 import { UserComponent } from './user/user.component';
 import { DonateComponent } from './donate/donate.component';
 
@@ -35,6 +36,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     DxSchedulerModule,
     OAuthModule.forRoot(),
@@ -56,7 +58,8 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
     UserComponent,
     DonateComponent,
     CameraComponent,
-    CalendarComponent
+    // CalendarComponent,
+    TaskCreateComponent
   ],
   providers: [
     PicturesComponent,
@@ -64,7 +67,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
   // Global
   // { provide: FlightService, useClass: FlightService}
   // FlightService
-  bootstrap: [AppComponent, CalendarComponent]
+  bootstrap: [AppComponent]
 })
 
 export class AppModule { }

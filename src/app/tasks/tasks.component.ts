@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { forEach } from '@angular/router/src/utils/collection';
+import { Item, ItemService } from '../item.service';
 
 @Component({
   selector: 'app-tasks',
@@ -9,15 +10,19 @@ import { forEach } from '@angular/router/src/utils/collection';
 })
 export class TasksComponent implements OnInit {
 
-
+tasks: Item[] = new Array<Item>();
   timtask: string;
   fabitask: string;
   julestask: string;
   ngOnInit() {
+    this.loadTasks();
   }
-  constructor() {
+  constructor(private taskService: ItemService) {
   }
-
+async loadTasks() {
+  this.tasks = await this.taskService.getItems({});
+  console.log(this.tasks);
+}
 
   public showquote() {
 
@@ -45,9 +50,6 @@ export class TasksComponent implements OnInit {
     console.log(newesttasks)
 
     this.julestask = newesttasks[rand3];
-    // var index = newesttasks.indexOf(this.julestask);
-    // if (index !== -1)
-    //   newesttasks.splice(index, 1);
    
   }
 

@@ -1,0 +1,64 @@
+button.create {
+    background-color: #f03e3e;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: table; 
+    vertical-align: bottom;
+    
+}
+
+button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+div.numbers{
+    font-size: 25px;
+    
+    text-align: center;
+
+    background-color: #5c7cfa;
+
+    position: absolute;
+    top: 8px;
+    right: 0px;
+}
+div.title{
+    font-size: 25px;
+}
+div.submitbutton{
+    
+    background-color: #5c7cfa;
+    border: none;
+   
+   vertical-align: right;
+}
+
+.wrapper {
+    position:relative;
+    left: 50%;
+    margin-top:50%;
+}
+
+.card{
+    // border:1px black;
+    border-radius: 25px;
+    background: #5c7cfa;
+    // padding: 20px; 
+    // width: 200px;
+    // height: 150px;
+}
+
+// .create {
+//     position: absolute;
+//     top: 50%;
+// }
